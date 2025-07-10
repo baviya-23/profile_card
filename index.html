@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Profile card</title>
+    <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header class="navbar">
+            <h2 class="logo">MyProfile</h2>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">EXPLORE</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+            </nav>
+            <div class="navbar-right">
+                <button id="themeToggle">🌙</button>
+                <img src="https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg" alt="profile" class="profile-icon"/>
+            </div>
+        </header>
+        <div class="card-container">
+        <div class="product-grid">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.sY3V7P9SRYSHguLQwFb4NAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+            <h3>_Rosy_05</h3>
+            <p>Smart|frontend developer|loves learning</p>
+            <button id="card">FOLLOW</button>
+            
+        </div>
+        <div class="product-grid">
+            <img src="https://i.pinimg.com/originals/65/59/37/6559374e52a921ad76785d2175db21c2.jpg">
+            <h3>_pink_23</h3>
+            <p>Funny|backened developer|loves playing</p>
+            <button id="card">FOLLOW</button>
+            
+        </div>
+        <div class="product-grid">
+            <img src="https://www.trickscity.com/wp-content/uploads/2018/01/girls-dp-for-fb-720x570.jpg">
+            <h3>_Preethi_07</h3>
+            <p>Smart|developer|loves listening</p>
+            <button id="card">FOLLOW</button>
+            
+        </div>
+         <div class="product-grid">
+            <img src="https://e0.pxfuel.com/wallpapers/602/831/desktop-wallpaper-stylish-attitude-girls-for-facebook-profile.jpg">
+            <h3>_Black_02</h3>
+            <p>Smart|Software developer|loves capturing</p>
+            <button id="card">FOLLOW</button>
+         </div>
+         
+            
+        </div>
+        <script>
+            const toggleBtn=document.getElementById("themeToggle");
+            toggleBtn.addEventListener('click',()=>{
+                document.body.classList.toggle('dark-mode');
+                toggleBtn.textContent=document.body.classList.contains('dark-mode')?'☀️' : '🌙';
+            });
+        </script>
+
+        
+
+        
+
+    </body>
+</html>

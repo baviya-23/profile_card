@@ -1,0 +1,133 @@
+.navbar{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #222;
+   color: white;
+   padding: 15px 40px;
+   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+   position:sticky;
+   top:0;
+   z-index:10;
+}
+.logo{
+    font-size:24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap:30px;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition:color 0.3s;
+}
+a:hover{
+    color:#00e1ff
+}
+img{
+   width:220px;
+   height:220px;
+   border-radius: 50%;
+   object-fit: cover;
+   margin:15px;
+}
+body{
+    margin:0;
+   padding:0;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: aliceblue;
+}
+.card-container{
+    display: flex;
+   justify-content: center;
+   padding:40px;
+   gap:30px;
+   flex-wrap: wrap;
+}
+.product-grid{
+    width: 250px;
+    background-color: palevioletred;
+    align-items:center;
+    border-radius:20px;
+    text-align: center;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+   padding: 20px;
+   transition: transform o.3s ease;
+}
+.product-grid:hover{
+    transform: scale(1.05);
+}
+h3{
+    margin:10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+p{
+    font-size:14px;
+    margin-bottom:15px;
+}
+button{
+    padding:10px;
+    margin-top:5px;
+    background-color: aqua;
+    border-radius: 15px;
+    cursor:pointer;
+    font-weight: bold;
+}
+button:hover{
+    background-color: blue;
+}
+@media(max-width:600px){
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-grid{
+        width:90%
+    }
+
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap:15px;
+
+}
+.profile-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:1px solid white;
+    cursor:pointer;
+}
+#themeToggle{
+    font-size: 18px;
+    background: none;
+    color:white;
+    border:none;
+    cursor:pointer;
+    transition:transform 0.3s ease;
+}
+#themeToggle:hover{
+    transform:scale(1.2);
+}
+.dark-mode{
+    background-color: #111;
+    color: #fff;
+}
+.dark-mode .navbar{
+    background-color: #000;
+}
+.dark-mode .nav-links li a{
+    color:#fff
+}
+.dark-mode .profile-icon{
+    border-color: #fff;
+}
